@@ -1,0 +1,77 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75); /* Keep the overlay for focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #2C3E50; /* Match app background */
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 750px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: #C0392B;
+}
+
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-poster {
+    width: 400px;
+    height: 350px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.movie-info {
+    text-align: left;
+    color: #ECF0F1; /* Light text color */
+    padding: 0 15px;
+}
+
+.movie-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #EAECEE;
+    text-align: center;
+}
+
+.movie-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #BDC3C7; /* Softer gray for paragraph text */
+}
